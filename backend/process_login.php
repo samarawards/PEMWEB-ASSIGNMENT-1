@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (password_verify($password, $user['password'])) {
             $_SESSION['user_name'] = $user['name'];
             $_SESSION['user_email'] = $user['email'];
-            header("Location: portofolio.php");
+            header("Location: ../frontend/assets/portofolio.php");
             exit();
         } else {
             $_SESSION['error'] = "Password salah!";
@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         $_SESSION['error'] = "Email tidak terdaftar!";
     }
-    header("Location: login.php");
+    header("Location: ../frontend/assets/login.php");
     exit();
 }
 ?>

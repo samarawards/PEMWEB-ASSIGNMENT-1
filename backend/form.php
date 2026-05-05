@@ -23,7 +23,7 @@ $address = $_POST['address'];
 // upload file
 $photoName = "";
 if (isset($_FILES['photo']) && $_FILES['photo']['error'] == 0) {
-    $targetDir = "uploads/";
+    $targetDir = "../uploads/";
     
     // buat folder kalau belum ada
     if (!is_dir($targetDir)) {
@@ -41,7 +41,7 @@ $sql = "INSERT INTO users (name, email, password, telepon, gender, hobbies, addr
         VALUES ('$name', '$email', '$password', '$telepon', '$gender', '$hobbies', '$address', '$photoName')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "<script>alert('Registrasi Berhasil! Silakan Login.'); window.location.href='login.php';</script>";
+    echo "<script>alert('Registrasi Berhasil! Silakan Login.'); window.location.href='../frontend/assets/login.php';</script>";
 } else {
     echo "Error: " . $conn->error;
 }

@@ -8,7 +8,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>1st Meeting is for HTML</title>
 </head>
 <body>
@@ -21,7 +21,7 @@ session_start();
                 <h5>Bachelor Student of Informatics Engineering</h5>
             </div>
             <?php if (isset($_SESSION['user_name'])): ?>
-                <a href="logout.php" style="background: #ef4444; color: white; padding: 5px 15px; border-radius: 5px; text-decoration: none;">Logout</a>
+                <a href="../../backend/logout.php" style="background: #ef4444; color: white; padding: 5px 15px; border-radius: 5px; text-decoration: none;">Logout</a>
             <?php else: ?>
                 <a href="login.php" style="background: #6366f1; color: white; padding: 5px 15px; border-radius: 5px; text-decoration: none;">Login</a>
             <?php endif; ?>
@@ -41,7 +41,7 @@ session_start();
 
     <div class="bagidua">
         <div>
-            <img src="Pas Photo 2.jpeg" alt= "graduate picture" width="100">
+            <img src="../img/Pas Photo 2.jpeg" alt= "graduate picture" width="100">
         </div>
         <div>
             <table border="1">
@@ -70,7 +70,7 @@ session_start();
         </div>
     </div>
 
-    <form id="myForm" action="form.php" method="post">
+    <form id="myForm" action="../../backend/form.php" method="post">
         <fieldset>
             <legend>Personal Data (Registration)</legend>
 
@@ -141,7 +141,7 @@ session_start();
     </table>
 
     </div>
-    <script src="script.js"></script>
+    <script src="../JS/script.js"></script>
     
 </body>
 </html>

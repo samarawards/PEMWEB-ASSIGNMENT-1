@@ -12,7 +12,7 @@ if (!isset($_SESSION['user_name'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portofolio.css">
+    <link rel="stylesheet" href="../css/portofolio.css">
     <title>Portofolio - <?php echo htmlspecialchars($_SESSION['user_name']); ?></title>
     <style>
         .logout-banner {
@@ -30,7 +30,7 @@ if (!isset($_SESSION['user_name'])) {
 
     <div class="logout-banner">
         <span>Logged in as: <b><?php echo htmlspecialchars($_SESSION['user_name']); ?></b></span>
-        <a href="logout.php" style="color: #ef4444; font-weight: bold; text-decoration: none;">Sign Out</a>
+        <a href="../../backend/logout.php" style="color: #ef4444; font-weight: bold; text-decoration: none;">Sign Out</a>
     </div>
 
     <Header>
